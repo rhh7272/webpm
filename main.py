@@ -1,35 +1,3 @@
-# import os
-# from dotenv import load_dotenv
-# # import google.generativeai as genai
-# from google import genai
-
-# # .env 읽기
-# load_dotenv()
-
-# # API 키 가져오기
-# # key = os.getenv("GEMINI_API_KEY")
-# # API_KEY = os.getenv("GEMINI_API_KEY")
-# API_KEY = os.environ.get("GEMINI_API_KEY")
-
-# # Gemini 연결
-# # genai.configure(api_key=key)
-# # genai.Client(api_key=API_KEY)
-# client = genai.Client(api_key=API_KEY)
-
-# # AI 모델 지정/생성
-# # model = genai.GenerativeModel('gemini-1.5-flash')
-
-# # # 질문하기
-# # result = model.generate_content("AI Agent를 중학생에게 설명해줘")
-# response = client.models.generate_content(
-#     model='gemini-2.5-flash',
-#     contents='AI Agent를 중학생에게 설명해줘'
-# )
-
-# # print(result)
-# print(result.text)
-
-
 import os
 import sys
 import io
@@ -41,7 +9,7 @@ from openai import OpenAI
 sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding='utf-8')
 sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding='utf-8')
 # .env 파일 읽기
-load_dotenv()
+# load_dotenv()
 
 # 1. API 키 설정 및 클라이언트 생성
 API_KEY = os.environ.get("OPENAI_API_KEY") 
