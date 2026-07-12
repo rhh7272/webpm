@@ -2,7 +2,7 @@ import os
 import sys
 import io
 import streamlit as st
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from openai import OpenAI
 
 # 한글 윈도우 환경에서 이모지 출력 시 발생하는 cp949 인코딩 에러 방지
