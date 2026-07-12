@@ -1,0 +1,11 @@
+# cmd> uv pip install -r requirements.txt
+
+google-genai
+python-dotenv
+openpyxl
+streamlit
+requests
+beautifulsoup4
+pandas
+protobuf
+openai
